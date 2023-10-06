@@ -4,7 +4,7 @@ import numpy as np
 import random
 # calculate the theoretical result of running time
 def calculate():
-    n = 1000000
+    n = 1000
     r = math.log(n)
     print(r)
 
@@ -30,7 +30,7 @@ def main():
     A = np.arange(0, n, 1)
     # random initialize the k to circular shift the array
     k=random.randint(1,n)
-    #Circular shift tp left by k positions
+    # circular shift to left by k positions
     np.roll(A,k)
     # Record the start time of the function
     start_time = time.time_ns()
